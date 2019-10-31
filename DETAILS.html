@@ -35,7 +35,7 @@
         {
             
         }
-        #summary
+        .summary
         {
             width: 50pc;
             height: 10pc;
@@ -56,6 +56,32 @@
     
     
     </style>
+    <script>
+        var n1,n2,y1,y2,ad,em,ln,cl,sh,tp,sm,num,a;
+        function submit()
+        {
+            n1=document.getElementById("fname").value;
+            n2=document.getElementById("lname").value;
+            ad=document.getElementById("addr").value;
+            y1=document.getElementById("year1").value;
+            y2=document.getElementById("year2").value;
+            em=document.getElementById("email").value;
+            ln=document.getElementById("lkdin").value;
+            cl=document.getElementById("col").value;
+            sh=document.getElementById("school").value;
+            tp=document.getElementById("tp1").value;
+            sm=document.getElementById("sm").value;
+            num=document.getElementById("mno").value;
+
+            a=num.length;
+            if(a!=10)
+            window.alert("fill up mobile number");
+
+        }
+        
+    
+    
+    </script>
 
 
     <body>
@@ -67,58 +93,60 @@
         <hr>
         <br>
 
-        <forms>
+        <form onsubmit="submit()">
             <h3>PERSONAL DETAILS</h3>
             <p>First name</p>
-            <input type="text" placeholder="Enter first name" class="box1">
+            <input type="text" placeholder="Enter first name" class="box1" id="fname">
             <br>
             <p>Last name</p>
-            <input type="text" placeholder="Enter last name" class="box1">
+            <input type="text" placeholder="Enter last name" class="box1" id="lname">
             <br>
             <p>Address</p>
-            <input type="text" placeholder="Enter Address" class="box">
+            <input type="text" placeholder="Enter Address" class="box" id="addr">
             <br>
             <p>Mobile Number</p>
-            <input type="text" placeholder="Enter Mobile number" class="box1">
+            <input type="text" placeholder="Enter Mobile number" class="box1" id="mno">
             <br>
             <p>Email</p>
-            <input type="email" placeholder="Enter E-mail" class="box1">
+            <input type="email" placeholder="Enter E-mail" class="box1" id="email">
             <br>
             <p>Linked-in URL</p>
-            <input type="url" placeholder="Enter URL" class="box">
+            <input type="url" placeholder="Enter URL" class="box" id="lkdin">
             <br><br><br><br>
             <hr>
             <br>
             <h3>EDUCATION</h3>
             <br>
             <p>College/University</p>
-            <input type="text" placeholder="Enter institute name" class="box">
+            <input type="text" placeholder="Enter institute name" class="box" id="col">
             <br>
             <p>Year of completion (or expected)</p>
-            <input type="text" placeholder="Enter Year">
+            <input type="text" placeholder="Enter Year" id="yearc">
             <br>
             <p>High school</p>
-            <input type="text" placeholder="Enter School name" class="box">
+            <input type="text" placeholder="Enter School name" class="box" id="school">
             <br>
             <p>Year of completion</p>
-            <input type="text" placeholder="Enter Year" >
+            <input type="text" placeholder="Enter Year" id="years">
             <br><br><br><br>
             <hr>
             <br>
             <h3>PROJECTS</h3>
             <br>
             <p>Topic</p>
-            <input type="text" placeholder="Enter topic" class="box">
+            <input type="text" placeholder="Enter topic" class="box" id="tp1">
             <br>
             <p>Short summary</p>
-            <input type="text" placeholder="Type a short summary in less than 50 words" id="summary"> 
+            <input type="text" placeholder="Type a short summary in less than 50 words" class="summary" id="sm"> 
             <br>
+            <input type="submit" placeholder="SUBMIT" > 
 
 
 
 
 
-        </forms>
+        </form>
+        
 
 
 
