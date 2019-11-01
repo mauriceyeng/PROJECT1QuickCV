@@ -51,16 +51,19 @@
         hr{
             background-color: brown;
         }
-    
+       
+        
+          
     
     
     
     
     </style>
     <script>
-        var n1,n2,y1,y2,ad,em,ln,cl,sh,tp,sm,num,a;
+        
         function submit()
         {
+            var n1,n2,y1,y2,ad,em,ln,cl,sh,tp,sm,num,a;
             n1=document.getElementById("fname").value;
             n2=document.getElementById("lname").value;
             ad=document.getElementById("addr").value;
@@ -78,6 +81,11 @@
             if(a!=10)
             window.alert("fill up mobile number");
 
+            
+            
+
+            
+
         }
         
     
@@ -94,7 +102,7 @@
         <h2>Enter your details</h2>
         </div>
 
-        <form onsubmit="submit()">
+        <form onsubmit="submit()" >
             <h3>PERSONAL DETAILS</h3>
             <p>First name</p>
             <input type="text" placeholder="Enter first name" class="box1" id="fname">
