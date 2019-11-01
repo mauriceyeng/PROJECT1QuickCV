@@ -7,6 +7,9 @@
         </title>
 
         <style>
+            div{
+                text-align: center;
+            }
             body{
                 background-color: lightcyan;
                 
@@ -17,36 +20,57 @@
                 font-family: 'Courier New', Courier, monospace;
             }
             img{
-            border: 15px solid red;
+            border: 10px solid lightgreen;
             margin: 0px;
-            padding: 10px;
-            height: 50%;
+            padding: 5px;
+            height: 80%;
             position: relative;
             right: 0px;
             
         }
+            .demo1{
+                height: 50%;
+                
+            }
+            .demo2{
+                height: 80%;
+            }
            
         
         </style>
+        <script>
+            function f()
+            {
+                var element=document.getElementById("demo");
+                element.classList.toggle("demo2");
+
+            }
+            function f1()
+            {
+                var element=document.getElementById("demo1");
+                element.classList.toggle("demo2");
+
+            }
+        </script>
     </head>
 
 
     <body>
-            <br>
-            <br>
-            <br>
-            <br>
+            
+            
             <div class="w3-container w3-green">
         <h1 align="center">PICK A CV FORMAT</h1>
             <h4 align="center">Strictly following the format of PES 318</h4>
     
             </div>
+        
         <br>
-        <br>
-        <a href="DETAILS.html"><img src="CV1.jpg"></a>
-        <br>
-        <a href="DETAILS.html"><img src="CV2.jpg"></a>
+        <div>
+            <a href="DETAILS.html"><img src="CV1.jpg" alt="FORMAT 1" id="demo" class="demo1" onmouseover="f()" onmouseout="f()"></a>
+            <a href="DETAILS.html"><img src="CV2.jpg" alt="FORMAT 2" id="demo1" class="demo1" onmouseover="f1()" onmouseout="f()"></a>
 
+        </div>
+        
         
 
 
