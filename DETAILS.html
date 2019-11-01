@@ -9,7 +9,7 @@
         body
         {
             background-color: lightcyan;
-
+            padding: 15px;
         }
         h1
         {
@@ -51,19 +51,16 @@
         hr{
             background-color: brown;
         }
-       
-        
-          
+    
     
     
     
     
     </style>
     <script>
-        
+        var n1,n2,y1,y2,ad,em,ln,cl,sh,tp,sm,num,a;
         function submit()
         {
-            var n1,n2,y1,y2,ad,em,ln,cl,sh,tp,sm,num,a;
             n1=document.getElementById("fname").value;
             n2=document.getElementById("lname").value;
             ad=document.getElementById("addr").value;
@@ -80,16 +77,7 @@
             a=num.length;
             if(a!=10)
             window.alert("fill up mobile number");
-
-            
-            
-
-            
-
         }
-        
-    
-    
     </script>
 
 
@@ -98,56 +86,55 @@
         <br>
         
         <h1>GREAT JOB!! YOU ARE JUST ONE STEP AWAY TO YOUR INTERVIEW!</h1>
-        <br><br><br>
+        <br>
         <h2>Enter your details</h2>
         </div>
 
-        <form onsubmit="submit()" >
-            <h3>PERSONAL DETAILS</h3>
-            <p>First name</p>
+        <form onsubmit="submit()">
+            <h3>PERSONAL DETAILS:</h3>
+            <p>First Name.......: 
             <input type="text" placeholder="Enter first name" class="box1" id="fname">
-            <br>
-            <p>Last name</p>
+            </p>
+            <p>Last Name.......:
             <input type="text" placeholder="Enter last name" class="box1" id="lname">
-            <br>
-            <p>Address</p>
+            </p>
+            <p>Address...........:
             <input type="text" placeholder="Enter Address" class="box" id="addr">
-            <br>
-            <p>Mobile Number</p>
+            </p>
+            <p>Mobile Number:
             <input type="text" placeholder="Enter Mobile number" class="box1" id="mno">
-            <br>
-            <p>Email</p>
+            </p>
+            <p>Email...............:
             <input type="email" placeholder="Enter E-mail" class="box1" id="email">
-            <br>
-            <p>Linked-in URL</p>
+            </p>
+            <p>Linked-in URL.:
             <input type="url" placeholder="Enter URL" class="box" id="lkdin">
-            <br><br><br><br>
+            </p>
             <hr>
-            <br>
-            <h3>EDUCATION</h3>
-            <br>
-            <p>College/University</p>
+            
+            <h3>EDUCATION:</h3>
+            <p>Name of College/University..........:
             <input type="text" placeholder="Enter institute name" class="box" id="col">
-            <br>
-            <p>Year of completion (or expected)</p>
+            </p>
+            <p>Year of completion (or expected).:
             <input type="text" placeholder="Enter Year" id="yearc">
-            <br>
-            <p>High school</p>
+            </p>
+            <p>Name of High School ..................:
             <input type="text" placeholder="Enter School name" class="box" id="school">
-            <br>
-            <p>Year of completion</p>
+            </p>
+            <p>Year of completion.......................:
             <input type="text" placeholder="Enter Year" id="years">
-            <br><br><br><br>
+            </p>
             <hr>
-            <br>
+            
             <h3>PROJECTS</h3>
-            <br>
-            <p>Topic</p>
+            
+            <p> Name of Project:
             <input type="text" placeholder="Enter topic" class="box" id="tp1">
-            <br>
-            <p>Short summary</p>
+            </p>
+            <p>Short summary...:
             <input type="text" placeholder="Type a short summary in less than 50 words" class="summary" id="sm"> 
-            <br>
+            </p>
             <hr>
             <br>
             <h3>AREAS OF RESPONSIBILITY</h3>
