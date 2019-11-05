@@ -32,10 +32,10 @@
         {
             
         }
-        .summary
+        .smallbox
         {
             width: 50pc;
-            height: 10pc;
+            height: 5pc;
             max-lines: 5;
             
         }
@@ -51,10 +51,6 @@
         hr{
             background-color: brown;
         }
-        
-
-        
-        
     
     
     
@@ -81,9 +77,6 @@
             a=num.length;
             if(a!=10)
             window.alert("fill up mobile number");
-
-            var elem=document.getElementById("show");
-            elem.parentNode.removeChild(elem);
         }
     </script>
 
@@ -94,26 +87,22 @@
         
         <h1>GREAT JOB!! YOU ARE JUST ONE STEP AWAY TO YOUR INTERVIEW!</h1>
         <br>
-        
+        <h2>Enter your details</h2>
         </div>
 
-        <form onsubmit="submit()" id="show">
-                <h2>Enter your details</h2>
-                <br>
+        <form onsubmit="submit()">
             <h3>PERSONAL DETAILS:</h3>
-            <p>First Name.......: 
+            <p>NAME:  
             <input type="text" placeholder="Enter first name" class="box1" id="fname">
             </p>
-            <p>Last Name.......:
-            <input type="text" placeholder="Enter last name" class="box1" id="lname">
-            </p>
-            <p>Address...........:
+            
+            <p>ADDRESS: 
             <input type="text" placeholder="Enter Address" class="box" id="addr">
             </p>
-            <p>Mobile Number:
+            <p>MOBILE NUMBER: 
             <input type="text" placeholder="Enter Mobile number" class="box1" id="mno">
             </p>
-            <p>Email...............:
+            <p>E-MAIL: 
             <input type="email" placeholder="Enter E-mail" class="box1" id="email">
             </p>
             <p>Linked-in URL.:
@@ -124,6 +113,9 @@
             <h3>EDUCATION:</h3>
             <p>Name of College/University..........:
             <input type="text" placeholder="Enter institute name" class="box" id="col">
+            </p>
+            <p>GRADUATION DEGREE
+                <input type="text" placeholder="Enter Graduation Degree title" class="box" id="deg">
             </p>
             <p>Year of completion (or expected).:
             <input type="text" placeholder="Enter Year" id="yearc">
@@ -141,8 +133,14 @@
             <p> Name of Project:
             <input type="text" placeholder="Enter topic" class="box" id="tp1">
             </p>
-            <p>Short summary...:
-            <input type="text" placeholder="Type a short summary in less than 50 words" class="summary" id="sm"> 
+            <p>Overview
+            <input type="text" placeholder="Overview" class="smallbox" id="sm"> 
+            </p>
+            <p>Description
+                <input type="text" placeholder="Description of project" class="smallbox" id="sm">
+            </p>
+            <p>Learning outcomes
+                <input type="text" placeholder="Learning outcomes" class="smallbox" id="sm">
             </p>
             <hr>
             <br>
